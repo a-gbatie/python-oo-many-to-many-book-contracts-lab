@@ -14,7 +14,7 @@ class Author:
   def books(self):
     return list(set(contract.book for contract in self.contracts())) # finds all books for particular author
   
-  def sign_contracts(self, book, date, royalties):
+  def sign_contract(self, book, date, royalties):
     return Contract(self, book, date, royalties)
   
   def total_royalties(self):
